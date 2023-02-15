@@ -32,7 +32,7 @@ namespace EmployeeCRUD.Models
                 IXLWorksheet worksheet = workbook.Worksheet(1);
                 bool FirstRow = true;
                 //Range for reading the cells based on the last cell used.  
-                string readRange = "1:82";
+                string readRange = "1:83";
                 foreach (IXLRow row in worksheet.RowsUsed())
                 {
                     //If Reading the First Row (used) then add them as column name  
@@ -315,170 +315,176 @@ namespace EmployeeCRUD.Models
                             }
                             else if (columnId == 49)
                             {
-                                meterexcelupload.FRSPD = value;
+                                meterexcelupload.FRCSHPDCMASHAP = value;
 
                             }
                             else if (columnId == 50)
                             {
-                                meterexcelupload.hapag = value;
+                                meterexcelupload.FRSPD = value;
 
                             }
+                            
                             else if (columnId == 51)
                             {
-                                meterexcelupload.Hartree = value;
+                                meterexcelupload.hapag = value;
 
                             }
                             else if (columnId == 52)
                             {
-                                meterexcelupload.Inatech = value;
+                                meterexcelupload.Hartree = value;
 
                             }
                             else if (columnId == 53)
                             {
-                                meterexcelupload.inatechcustomers = value;
+                                meterexcelupload.Inatech = value;
 
                             }
                             else if (columnId == 54)
                             {
-                                meterexcelupload.k8sazureclustername = value;
+                                meterexcelupload.inatechcustomers = value;
 
                             }
                             else if (columnId == 55)
                             {
-                                meterexcelupload.k8sazureservice = value;
+                                meterexcelupload.k8sazureclustername = value;
 
                             }
                             else if (columnId == 56)
                             {
-                                meterexcelupload.msresourceusage = value;
+                                meterexcelupload.k8sazureservice = value;
 
                             }
                             else if (columnId == 57)
                             {
-                                meterexcelupload.NonProdResource = value;
+                                meterexcelupload.msresourceusage = value;
 
                             }
                             else if (columnId == 58)
                             {
-                                meterexcelupload.PDI = value;
+                                meterexcelupload.NonProdResource = value;
 
                             }
                             else if (columnId == 59)
                             {
-                                meterexcelupload.PDIUAT = value;
+                                meterexcelupload.PDI = value;
 
                             }
                             else if (columnId == 60)
                             {
-                                meterexcelupload.PMG = value;
+                                meterexcelupload.PDIUAT = value;
 
                             }
                             else if (columnId == 61)
                             {
-                                meterexcelupload.Prf = value;
+                                meterexcelupload.PMG = value;
 
                             }
                             else if (columnId == 62)
                             {
-                                meterexcelupload.Refuel = value;
+                                meterexcelupload.Prf = value;
 
                             }
                             else if (columnId == 63)
                             {
-                                meterexcelupload.resourceType = value;
+                                meterexcelupload.Refuel = value;
 
                             }
                             else if (columnId == 64)
                             {
-                                meterexcelupload.SHAPI = value;
+                                meterexcelupload.resourceType = value;
 
                             }
                             else if (columnId == 65)
                             {
-                                meterexcelupload.Shiptech10 = value;
+                                meterexcelupload.SHAPI = value;
 
                             }
                             else if (columnId == 66)
                             {
-                                meterexcelupload.Shiptechdev = value;
+                                meterexcelupload.Shiptech10 = value;
 
                             }
                             else if (columnId == 67)
                             {
-                                meterexcelupload.ShiptechHapag = value;
+                                meterexcelupload.Shiptechdev = value;
 
                             }
                             else if (columnId == 68)
                             {
-                                meterexcelupload.SmartTrader = value;
+                                meterexcelupload.ShiptechHapag = value;
 
                             }
                             else if (columnId == 69)
                             {
-                                meterexcelupload.Storage = value;
+                                meterexcelupload.SmartTrader = value;
 
                             }
                             else if (columnId == 70)
                             {
-                                meterexcelupload.Stroage = value;
+                                meterexcelupload.Storage = value;
 
                             }
                             else if (columnId == 71)
                             {
-                                meterexcelupload.subcustomerlevel = value;
+                                meterexcelupload.Stroage = value;
 
                             }
                             else if (columnId == 72)
                             {
-                                meterexcelupload.Techoil = value;
+                                meterexcelupload.subcustomerlevel = value;
 
                             }
                             else if (columnId == 73)
                             {
-                                meterexcelupload.Techoil_1133 = value;
+                                meterexcelupload.Techoil = value;
 
                             }
                             else if (columnId == 74)
                             {
-                                meterexcelupload.TechoilAlchemist = value;
+                                meterexcelupload.Techoil_1133 = value;
 
                             }
                             else if (columnId == 75)
                             {
-                                meterexcelupload.TechoilInternal = value;
+                                meterexcelupload.TechoilAlchemist = value;
 
                             }
                             else if (columnId == 76)
                             {
-                                meterexcelupload.TechoilMultitenant = value;
+                                meterexcelupload.TechoilInternal = value;
 
                             }
                             else if (columnId == 77)
                             {
-                                meterexcelupload.TechoilPDI = value;
+                                meterexcelupload.TechoilMultitenant = value;
 
                             }
                             else if (columnId == 78)
                             {
-                                meterexcelupload.TechoilStaging = value;
+                                meterexcelupload.TechoilPDI = value;
 
                             }
                             else if (columnId == 79)
                             {
-                                meterexcelupload.tenant = value;
+                                meterexcelupload.TechoilStaging = value;
 
                             }
                             else if (columnId == 80)
                             {
-                                meterexcelupload.TenantManager = value;
+                                meterexcelupload.tenant = value;
 
                             }
                             else if (columnId == 81)
                             {
-                                meterexcelupload.TerfoilBO = value;
+                                meterexcelupload.TenantManager = value;
 
                             }
                             else if (columnId == 82)
+                            {
+                                meterexcelupload.TerfoilBO = value;
+
+                            }
+                            else if (columnId == 83)
                             {
                                 meterexcelupload.TrefoilBO = value;
 

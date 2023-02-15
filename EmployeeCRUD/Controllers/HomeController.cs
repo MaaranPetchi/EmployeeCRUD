@@ -461,7 +461,6 @@ namespace EmployeeCRUD.Controllers
 
 
                     me.OrganizationName = meterdata.OrganizationName;
-
                     me.Period = meterdata.Period;
                     me.AgreementName = meterdata.AgreementName;
                     me.Publisher = meterdata.Publisher;
@@ -509,6 +508,7 @@ namespace EmployeeCRUD.Controllers
                     me.DemoMachineforAnanda = meterdata.DemoMachineforAnanda;
                     me.displayName = meterdata.displayName;
                     me.environment = meterdata.environment;
+                    me.FRCSHPDCMASHAP = meterdata.FRCSHPDCMASHAP;
                     me.FRSPD = meterdata.FRSPD;
                     me.hapag = meterdata.hapag;
                     me.Hartree = meterdata.Hartree;

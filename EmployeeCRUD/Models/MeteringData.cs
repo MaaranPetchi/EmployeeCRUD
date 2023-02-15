@@ -15,7 +15,7 @@ namespace EmployeeCRUD.Models
         [Key]
         public int Id { get; set; }
         public string OrganizationName { get; set; } = "";
-public string Period { get; set; } = "";
+        public string Period { get; set; } = "";
         public string AgreementName { get; set; } = "";
         public string Publisher { get; set; } = "";
         public string CompanyName { get; set; } = "";
@@ -62,7 +62,8 @@ public string CMAShiptech10{ get; set; } = "";
 public string DemoMachineforAnanda { get; set; } = "";
 public string displayName { get; set; } = "";
 public string environment { get; set; } = "";
-public string FRSPD{ get; set; } = "";
+public string FRCSHPDCMASHAP { get; set; } = "";
+ public string FRSPD{ get; set; } = "";
 public string hapag { get; set; } = "";
 public string Hartree { get; set; } = "";
 public string Inatech { get; set; } = "";
