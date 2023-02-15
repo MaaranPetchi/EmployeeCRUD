@@ -1,0 +1,32 @@
+﻿@model EmployeeCRUD.Models.ViewModel.RdAndNonExcel
+
+<h4> Excel-Fileupload</h4>
+<hr />
+
+<center><h4 style="font-family:'Times New Roman', Times, serif"> CLOUD-IQ BILLING STATEMENT</h4></center>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RIBillingFileUpload" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="@Model.Fileupload.formFile" class="control-label"></label>
+                <input asp-for="@Model.Fileupload.formFile" type="file" class="form-control" />
+                <span asp-validation-for="@Model.Fileupload.formFile" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Upload Billing Report to RD" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<br />
+<br />
+
+
+<a asp-action="Filecontainer" asp-controller="Home">Back to Main Page</a>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,48 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+           div.mainmenu {
+          width: 820px;
+          padding: 10px;
+          border: 5px solid gray;
+          margin: 0;
+        }
+
+        #heading{
+            color:skyblue;
+        }
+
+    </style>
+</head>
+<body>
+
+   <br/>
+  
+
+    
+    <center>  <h1 class="heading" style="font-family:'Times New Roman', Times, serif">Main Page</h1></center>
+    <div class="mainmenu" id="mainmenu">
+        <h4 style="font-family:'Times New Roman', Times, serif">Upload your RI Billing statement(Cloudiq - Excel format), Click below</h4>
+        <a asp-action="RIBillingFileUpload"><button type="button" class="btn btn-primary" value="Import">User Input RI Billing Excel File </button> </a>
+        <br />
+        <br />
+        <h4 style="font-family:'Times New Roman', Times, serif">Upload your Non - RI Billing statement(Cloudiq - Excel format), Click below </h4>
+        <a asp-action="NonRIBillingFileUpload"><button type="button" class="btn btn-primary" value="Import">User Input Non-RI Billing Excel File </button> </a>
+        <br />
+        <br />
+         <h4 style="font-family:'Times New Roman', Times, serif">Feed Manual Entry Consumption-Data - New Company/New Resource, Click below</h4>
+        <a asp-action="Create" asp-controller="Employee"><button type="button" class="btn btn-primary" value="DataSubmission"> User ConsumptionData </button></a>
+        <br />
+        <br />
+        <a asp-action="ShowingPowerBIList" asp-controller="Home"><button type="button" class="btn btn-success" value="visualization"> Reports </button> </a>
+        <h4 style="font-family:'Times New Roman', Times, serif">Click above for Reports</h4>
+</div>
+
+</body>
+</html>
+

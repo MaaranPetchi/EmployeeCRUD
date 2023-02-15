@@ -1,0 +1,81 @@
+﻿@model EmployeeCRUD.Models.UsersConsumptionData
+<br />
+<br />
+<p>If you want update or delete the consumption data , using the below button</p>
+<a asp-action="Index" asp-controller="Employee"><button type="button" class="btn btn-primary float-right" value="DataSubmission"> Exisiting User Consumption Report </button></a>
+<center><h4 style="font-family:'Times New Roman', Times, serif">CONSUMPTION DATA FORM </h4></center>
+<hr />
+<img src="https://static.thenounproject.com/png/36235-200.png" align="right" />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Name<span style="color:red">*</span></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="TYPE" class="control-label">TYPE<span style="color:red">*</span></label>
+                <input asp-for="TYPE" class="form-control" />
+                <span asp-validation-for="TYPE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RESOURCEGROUP" class="control-label">RESOURCEGROUP<span style="color:red">*</span></label>
+                <input asp-for="RESOURCEGROUP" class="form-control" />
+                <span asp-validation-for="RESOURCEGROUP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer" class="control-label">Customer<span style="color:red">*</span></label>
+                <input asp-for="Customer" class="form-control" />
+                <span asp-validation-for="Customer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Environment" class="control-label">Environment<span style="color:red">*</span></label>
+                <input asp-for="Environment" class="form-control" />
+                <span asp-validation-for="Environment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SplitPercentage" class="control-label">SplitPercentage<span style="color:red">*</span></label>
+                <input asp-for="SplitPercentage" class="form-control" />
+                <span asp-validation-for="SplitPercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SplitGroup" class="control-label">SplitGroup<span style="color:red">*</span></label>
+                <input asp-for="SplitGroup" class="form-control" />
+                <span asp-validation-for="SplitGroup" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Unit" class="control-label"></label>
+                <input asp-for="Unit" class="form-control" />
+                <span asp-validation-for="Unit" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Consumed" class="control-label"></label>
+                <input asp-for="Consumed" class="form-control" />
+                <span asp-validation-for="Consumed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecordCreatedOn" class="control-label"></label>
+                <input asp-for="RecordCreatedOn" class="form-control" />
+                <span asp-validation-for="RecordCreatedOn" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Upload" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Filecontainer" asp-controller="Home">Back to MainMenu</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

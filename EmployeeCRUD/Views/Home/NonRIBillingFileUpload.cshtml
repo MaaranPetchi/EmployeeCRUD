@@ -1,0 +1,47 @@
+﻿@model EmployeeCRUD.Models.NonRiBillingFile
+
+<br />
+<br />
+<center> <h4 style="font-family:Times New Roman">NON-RIBillingFile</h4></center>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <label class="control-label text-danger">@ViewBag.error</style></label>
+        <form asp-action="NonRIBillingFileUpload" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="@Model.formFile" class="control-label"></label>
+                <input asp-for="@Model.formFile" type="file" class="form-control" />
+                <span asp-validation-for="@Model.formFile" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Please Click the above Choosefile to Upload Non-RI Billing Report" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<img src="https://www.efilecabinet.com/wp-content/uploads/2019/05/blog_UploadDocs_1920x400_may2019.jpg" width="50%" align="right" />
+<br />
+<br />
+<br />
+<br />
+<div>
+    <a asp-action="Filecontainer">Back to Main Menu</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+  
+    <script type="text/javascript">
+        if(@ViewBag.error != null)
+        {
+        
+            alert("@ViewBag.error");
+       
+        }
+    </script>
+}
+
+}

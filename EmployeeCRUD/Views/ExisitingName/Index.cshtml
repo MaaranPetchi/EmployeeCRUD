@@ -1,0 +1,19 @@
+﻿@model ExisitingUserConsumptionData
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="col-md-4">
+    <form asp-controller="ExisitingName" asp-action="Index" method="post" role="form">
+        <div class="form-group">
+            <div class="alert-danger” asp-validation-summary="ModelOnly"></div>
+            <label asp-for="UserId"></label>
+            <select asp-for="UserId"
+                    class="form-control"
+                    asp-items="@(new SelectList(ViewBag.ExisitingName, "Value" ,"Text"))">
+            </select> :
+
+        </div>
+    </form>
+</div>

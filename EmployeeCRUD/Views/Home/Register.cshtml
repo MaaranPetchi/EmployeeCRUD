@@ -1,0 +1,41 @@
+﻿@model EmployeeCRUD.Models.SignUp
+<br />
+<br />
+
+<div style="margin-left:40%">
+    @*<h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Registration</h1>
+<hr />*@
+<img src="https://www.inatech.uni-freiburg.de/logo.png" />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Confirm_Password" class="control-label"></label>
+                <input asp-for="Confirm_Password" type="password" class="form-control" />
+                <span asp-validation-for="Confirm_Password" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="SignUp" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<i>
+    If you are already a User, login by Using this <a asp-action="Login">link</a></i>
+<div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
